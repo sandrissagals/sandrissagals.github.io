@@ -1,3 +1,11 @@
+#myVideo {
+    position: fixed;
+    background-position: center;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
 .dot {
     height: 125px;
     width: 125px;
@@ -17,12 +25,5 @@
     margin: 4px 2px;
     cursor: pointer;
 }
-#myVideo {
-    position: fixed;
-    background-position: center;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
+
 
