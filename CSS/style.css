@@ -25,7 +25,15 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+.row{
+    color: white;
+}
 
+
+
+table{
+    color: white;
+}
 
 @media (max-width: 575.98px) {
 
@@ -33,6 +41,7 @@
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+
 
 }
 
