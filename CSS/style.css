@@ -28,6 +28,13 @@
 .row{
     color: white;
 }
+.topjumbotrons{
+    margin-top: 250px;
+}
+
+.jumbotrons{
+    margin-top: 500px;
+}
 
 
 table{
