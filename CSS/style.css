@@ -28,7 +28,13 @@
 .row{
     color: white;
 }
+.topjumbotron{
+    margin-top: 250px;
+}
 
+.jumbotron{
+    margin-top: 500px;
+}
 
 
 table{

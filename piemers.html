@@ -1,46 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>jquery</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="./CSS/reset.css" rel="stylesheet">
-	<link href = "./libs/bootstrap/css/bootstrap.css" rel ="stylesheet">
-	<script src="./libs/jQuery/jquery2.1.4.min.js"></script>
-	<script src="./libs/bootstrap/js/bootstrap.js"> </script>
-	<link href="./CSS/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css">
+    <link href="./CSS/reset.css" rel="stylesheet">
+    <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel ="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> </script>
+    <link href="./CSS/style.css" rel="stylesheet">
+    <script src="./lightbox/js/lightbox.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav  navbar-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
+<video autoplay muted loop id="myVideo">
+    <source src="./video/stars.mp4" type="video/mp4">
+</video>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav" id="navigations">
+        <li class="navigation">
+            <a class="nav-link" href="#top">Main Page</a>
+        </li>
+        <li class="navigation">
+            <a class="nav-link" href="#about">About us</a>
+        </li>
+        <li class="navigation">
+            <a class="nav-link" href="#contacts">Contacts</a>
+        </li>
+
+        <li class="navigation dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Gallery
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#images">Images</a>
+                <a class="dropdown-item" href="#videos">Video</a>
+            </div>
+
+    </ul>
+</nav>
+<div class="topjumbotron text-center">
+    <h2 id="top">Top of page</h2>
+
+</div>
+
+<div class="container">
+    <div class="row" style="color: white">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Earth</h3>
+            <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago.</p>
+            <div style="text-align:center">
+                <img class="dot" src="./images/earth.jpg" alt="Generic placeholder image">
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Earth" class="button">Click for more</a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Mars</h3>
+            <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury. In English, Mars carries a name of the Roman god of war and is often referred to as the 'Red Planet'</p>
+            <div style="text-align:center">
+                <img class="dot" src="./images/mars.jpg" alt="Generic placeholder image">
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Mars" class="button">Click for more</a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Neptune</h3>
+            <p>Neptune is the eighth and farthest known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet.</p>
+            <div style="text-align:center">
+                <img class="dot" src="./images/neptune.jpg" alt="Generic placeholder image">
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Neptune" class="button">Click for more</a>
+        </div>
 
     </div>
-  </div>
-</nav>
-	<section class="container-fluid">
-		<section class="row">
-			<div class="col-md-4 col-sm-6 article" style="background-color:red">A</div>
-			<div class="col-md-4 col-sm-6 article" style="background-color:orange">
-			<input type="submit" value="sutit"  class="btn btn-success myBtn"/>
-			<input type="submit" value="sutit"  class="btn btn-success"/>
-			</div>
-			<div class="col-md-4 col-sm-6 article" style="background-color:green">D</div>
-		</section>
-	</section>
+</div>
+<div class="jumbotron text-center">
+    <h2 id="about">About Us</h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Who we are</h3>
+            <p> <b>MISSION</b>  <br>
+                To connect people to the Universe and each other under the sky we all share. <br>
+
+                <b> VISION </b> <br>
+                The Adler connects people, communities, and institutions to one another through the wonder of space science
+                <br> so we can explore our Universe together and use our collective knowledge and skills to create a better world for everyone.
+                <br>
+
+                <b> VALUES </b> <br>
+                <b> Scientific Inquiry</b> <br>
+                We nurture a scientific approach to solving problems. <br>
+
+                <b>Collaboration</b> <br>
+                We work together as a means to discovery. <br>
+
+                <b>Inclusivity</b> <br>
+                We show people they are valued and respected. <br>
+
+                <b>Diversity</b> <br>
+                We believe in equal and fair representation. <br>
+
+                <b>Experimentation</b> <br>
+                We enthusiastically prototype, test, and analyze to uncover new ideas. <br>
+
+                <b>Empathy</b> <br>
+                We are curious and responsive to each other’s point of view. <br></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Video about us</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UaPEMLEnmco" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div class="jumbotron text-center">
+    <h2 id="images">Images</h2>
+
+</div>
+
+<div class="container">
+    <div class="row" style="color: white">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+
+            <a href="images/earth.jpg" data-lightbox="image-1" data-title="Earth"><img src="./images/earth.jpg" alt=""/></a>
+            <br><br><br><br><br><br>
+            <a href="images/jupiter.jpg" data-lightbox="image-1" data-title="Jupiter"><img src="./images/jupiter.jpg" alt=""/></a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+
+            <a href="images/mars.jpg" data-lightbox="image-1" data-title="Mars"><img src="./images/mars.jpg" alt=""/></a>
+            <br><br><br><br><br><br>
+            <a href="images/uranus.jpg" data-lightbox="image-1" data-title="Uranus"><img src="./images/uranus.jpg" alt=""/></a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+
+            <a href="images/neptune.jpg" data-lightbox="image-1" data-title="Neptune"><img src="./images/neptune.jpg" alt=""/></a>
+            <br><br><br><br><br><br><br>
+            <a href="images/mercury.jpg" data-lightbox="image-1" data-title="Mercury"><img src="./images/mercury.jpg" alt=""/></a>
+        </div>
+    </div>
+</div>
+<div class="jumbotron text-center">
+    <h2 id="videos">Videos</h2>
+
+</div>
+
+<div class="container">
+    <div class="row" >
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>First video</h3>
+            <br>
+            <a><iframe width="300" height="315" src="https://www.youtube.com/embed/UqSe7APJBo0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Second video</h3>
+            <br>
+            <a><iframe width="300" height="315" src="https://www.youtube.com/embed/vOcS32EoL_I"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Third video</h3>
+            <br>
+            <a><iframe width="300" height="315" src="https://www.youtube.com/embed/F4CHTAZHToU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+        </div>
+    </div>
+</div>
+<div class="jumbotron text-center">
+    <h2 id="contacts">Contacts</h2>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Open Hours</h3>
+            <table class="table" style="color: white">
+                <thead>
+                <tr>
+                    <th scope="col" style="color: white">Date</th>
+                    <th scope="col" style="color: white">Hours</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Every Day:</td>
+                    <td>9:00am-4:00pm</td>
+                </tr>
+                <tr>
+                    <td>Summer Hours:</td>
+                    <td>9:00 am-6:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Thanksgiving Day:</td>
+                    <td>Closed</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Our contacts</h3>
+            <p>We're located at: <br>
+                Museum Campus <br>
+                1300 S LAKE SHORE <br>
+                DR <br>
+                CHICAGO, IL 60605</p>
+            <a href="https://www.facebook.com/adlerplanetarium">Facebook</a> <br>
+            <a href="https://twitter.com/AdlerPlanet">Twitter</a> <br>
+            <a href="https://github.com/sandrissagals/sandrissagals.github.io">GITHUB</a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>Where you can find us?</h3>
+            <p>Here:</p>
+            <div class="mapouter"><iframe class="gmap_canvas" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=adler%20planitarium&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe> </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <p>All rights are not reserved 2019</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+        </div>
+</footer>
 </body>
 </html>
